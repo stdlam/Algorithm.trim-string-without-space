@@ -2,7 +2,12 @@
 #include<math.h>
 #include<string>
 using namespace std;
+/*
 
+input:abc
+output: a, b, c, ab, ac, ba, bc, ca, cb, abc, acb, bac, bca, cab, cba
+
+*/
 void swap(char &a, char &b)
 {
 	char tmp = a;
@@ -41,8 +46,7 @@ void process(string input)
 {
 	for (int level = 1; level <= input.length(); level++)
 	{
-		//input:abc
-		//output: a, b, c, ab, ac, ba, bc, ca, cb, abc, acb, bac, bca, cab, cba
+		
 		for (int i = 0; i < input.length(); i++)
 		{
 			char getChar = input[i];
